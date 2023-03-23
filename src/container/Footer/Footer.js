@@ -8,18 +8,18 @@ const Footer = () => {
   return (
     <div id="Footer">
       <h4>Designed & Developed by Chandra Sekhar</h4>
-      <h4>Copyright © </h4>
+      {/* <h4>Copyright © </h4> */}
       <div className="social">
-        <a href="">
+        <a href="https://github.com/sp-chandra-sekhar">
           <BsGithub />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/developer-spcsg">
           <BsLinkedin />
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/sp_chandra_sekhar">
           <AiFillInstagram />
         </a>
-        <a href="">
+        <a href="mailto: developer.spcsg@gmail.com">
           <MdEmail />
         </a>
       </div>

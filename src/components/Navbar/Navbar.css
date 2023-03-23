@@ -29,7 +29,7 @@
 .header > ul > li > a{
     display: block;
     text-decoration: none;
-    color: var(--primaryColorLight);
+    color: var(--primaryColorDark);
     padding: 0.8rem 2.5rem;
     transition: all .2s ease-in;
 }

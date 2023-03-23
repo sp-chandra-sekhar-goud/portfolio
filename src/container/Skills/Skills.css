@@ -1,0 +1,26 @@
+#Skills h1{
+    margin: 0;
+    text-align: center;
+    padding: 2rem 0rem;   
+}
+
+#Skills .imgs{
+    /* height: 60vh; */
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+#Skills img{
+    height: 60px;
+    width: 60px;
+    background-color: var(--secondaryColorDark);
+    border-radius: 50%;
+    padding: 1rem;
+} 
+
+#Skills img:nth-child(odd){
+    background-color: var(--primaryColorLight);
+} 

@@ -17,7 +17,7 @@ const Projects = () => {
           <p>
             It was developed using HTML, CSS, Javascript and Firebase.
           </p>
-          <div id="btn"><a href="https://oyola.in" target="_blank">visit</a></div>
+          <div id="btn"><a href="https://oyola.in">visit</a></div>
         </div>
       </div>
     );

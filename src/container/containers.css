@@ -12,12 +12,21 @@
     font-family: var(--fontName);
 }
 
+#Skills{
+    width: 100%;
+    height: max-content;
+    background-color: var(--secondaryColorLight);
+    font-family: var(--fontName);
+    padding-bottom: 2rem;
+}
+
 #Projects{
     width: 100%;
     height: 100vh;
     background-color: var(--secondaryColorDark);
     font-family: var(--fontName);
 }
+
 
 #Footer{
     width: 100%;

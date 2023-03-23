@@ -26,7 +26,7 @@ const About = () => {
           <li>
             I have an Instagram page where I post tech-related content.
             <br/>
-            Follow <a href="https://www.instagram.com/programming.doubts" target="_blank">@programming.doubts</a> for more.
+            Follow <a href="https://www.instagram.com/programming.doubts">@programming.doubts</a> for more.
           </li>
         </ul>
       </div>

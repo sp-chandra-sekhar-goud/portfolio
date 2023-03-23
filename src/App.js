@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar} from './components/index'
-import {Home, About, Projects, Footer} from './container/index'
+import {Home, About, Projects, Skills, Footer} from './container/index'
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Navbar/>
       <Home/>
       <About/>
+      <Skills />
       <Projects/>
       <Footer/>
     </> 
