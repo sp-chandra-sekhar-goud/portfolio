@@ -1,0 +1,116 @@
+#Home {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  align-content: center;
+  justify-items: center;
+}
+
+.intro {
+  align-self: center;
+}
+
+.intro h1 {
+  font-weight: 700;
+  font-size: 2.7rem;
+  margin: 0;
+}
+
+.intro h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+/* Typewriter */
+
+.typewriter {
+  margin: 5vh 0;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  font-size: 1.7rem;
+  font-weight: 400;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Hero section */
+
+.hero {
+  padding: 0 5vw;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  #Home {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    padding: 3rem 0rem;
+  }
+  
+  .intro h1 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+
+  .intro h3 {
+    font-size: 1.2rem;
+  }
+  
+  .typewriter h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .hero {
+    margin-top: 7vh;
+    padding: 0 20vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h3 {
+    font-size: 1.2rem;
+  }
+  
+  .typewriter h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    padding: 0 7vw;
+  }
+}
