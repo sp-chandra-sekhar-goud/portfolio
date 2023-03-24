@@ -33,6 +33,14 @@
   font-weight: 500;
   color: var(--secondaryColorDark);
   background-color: var(--primaryColorDark);
+  transition: all .3s;
+}
+
+.card > .info a:hover {
+  font-weight: 600;
+  color: var(--primaryColorDark);
+  background-color: var(--secondaryColorDark);
+  border: 2px solid var(--primaryColorDark);
 }
 
 @media only screen and (max-width: 600px) {

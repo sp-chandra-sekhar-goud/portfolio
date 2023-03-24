@@ -10,6 +10,7 @@ const Footer = () => {
       <h4>Designed & Developed by Chandra Sekhar</h4>
       {/* <h4>Copyright © </h4> */}
       <div className="social">
+        <h4>Find me on</h4>
         <a href="https://github.com/sp-chandra-sekhar">
           <BsGithub />
         </a>
