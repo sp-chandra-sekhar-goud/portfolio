@@ -2,32 +2,29 @@ import React from "react";
 import "./About.css";
 import "../containers.css";
 import { Images } from "../../constants/index";
+import details from "../../details";
 
 const About = () => {
+
+  const name = details.info.name
+  const city = details.info.city
+  const country = details.info.country
+  const profileImage = details.info.image
+
+  const about = details.about.map((line) => {
+    return <li>{line}</li>
+  })
+
   return (
     <div id="About">
       <img src={Images.dots} alt="patter"/>
       <div className="imgPart">
-        <img src={Images.profile} alt="about" />
+        <img src={profileImage} alt="about" />
       </div>
       <div className="content">
-        <h4>Hi Everyone, I'm Chandra Sekhar from Vizag, India.</h4>
+        <h4>Hi Everyone, I'm {name} from {city}, {country}.</h4>
         <ul>
-          <li>
-            I am currently studying computer science engineering at Andhra
-            university in Vizag.
-          </li>
-
-          <li>
-            I am very interested in solving real-world problems & contributing
-            to open-source projects.
-          </li>
-
-          <li>
-            I have an Instagram page where I post tech-related content.
-            <br/>
-            Follow <a href="https://www.instagram.com/programming.doubts">@programming.doubts</a> for more.
-          </li>
+          {about}
         </ul>
       </div>
     </div>

@@ -1,24 +1,37 @@
-import React from 'react'
-import './Navbar.css'
+import React from "react";
+import details from "../../details";
+import "./Navbar.css";
 
 const Navbar = () => {
+
+  const logo = details.logo.name;
+
+  const links = details.navLinks.map((item) => {
+    return "#" + item;
+  });
+
+  const items = details.navLinks.map((item, index) => {
+    return (
+      <li>
+        <a href={links[index]}>{item}</a>
+      </li>
+    );
+  });
+
   return (
     <div>
-        <div className="header">
-        <a   href="#Home" className="logo">SPCSG.</a>
-        <input type="checkbox" className="menu-btn" id="menu-btn"/>
+      <div className="header">
+        <a href={links[0]} className="logo">
+          {logo}
+        </a>
+        <input type="checkbox" className="menu-btn" id="menu-btn" />
         <label for="menu-btn" className="menu-icon">
-            <span className="navicon"></span>
+          <span className="navicon"></span>
         </label>
-        <ul className="menu">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About Me</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-        </ul>
+        <ul className="menu">{items}</ul>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
